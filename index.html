@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hanna Bae</title>
+  <meta name="description" content="Hanna Bae — M.S. student at KAIST, researching 3D vision, geometric perception, 3D reconstruction, visual SLAM, and autonomous driving." />
+  <meta property="og:title" content="Hanna Bae" />
+  <meta property="og:description" content="M.S. student at KAIST. 3D vision, geometric perception, 3D reconstruction, visual SLAM, and autonomous driving." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar" aria-label="Profile">
+      <div class="profile-card">
+        <img class="profile-img" src="assets/profile.svg" alt="Hanna Bae" />
+        <h1>Hanna Bae</h1>
+        <p class="role">M.S. Student, KAIST EE</p>
+        <p class="lab">Statistical Inference &amp; Information Theory Laboratory</p>
+        <p class="tags">3D Vision · 3D Reconstruction · Visual SLAM</p>
+        <div class="link-row" aria-label="contact links">
+          <a href="mailto:hannabae@kaist.ac.kr">Email</a>
+          <a href="https://github.com/hanna-bae" target="_blank" rel="noopener">GitHub</a>
+          <a href="assets/Hanna_Bae_CV.pdf" target="_blank" rel="noopener">CV</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <nav class="topnav" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#research-projects">Research Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <section id="about" class="section hero">
+        <p class="eyebrow">3D Vision · Geometric Perception</p>
+        <h2>Hi, I am Hanna.</h2>
+        <p>
+          I am a master's student in Electrical Engineering at KAIST, advised by Prof. Junmo Kim.
+          My research focuses on 3D vision and geometric perception, particularly 3D reconstruction,
+          visual SLAM, multi-view geometry, and autonomous driving.
+        </p>
+        <p>
+          I am broadly interested in reliable 3D scene understanding from visual inputs.
+          My recent work explores how modern 3D reconstruction models can be made more consistent,
+          scalable, and applicable to long real-world sequences.
+        </p>
+        <div class="highlights">
+          <div><strong>KAIST</strong><span>M.S. in EE, 2025–</span></div>
+          <div><strong>GIST</strong><span>B.S. in EECS, GPA 4.11/4.5</span></div>
+          <div><strong>UC Berkeley</strong><span>Summer Session, Data Science &amp; Statistics</span></div>
+        </div>
+      </section>
+
+
+      <section id="education" class="section">
+        <div class="section-head">
+          <h2>Education</h2>
+        </div>
+        <div class="timeline">
+          <div class="item">
+            <span class="date">2025.02 – Present</span>
+            <h3>KAIST</h3>
+            <p>M.S. in Electrical Engineering, Statistical Inference &amp; Information Theory Laboratory.</p>
+          </div>
+          <div class="item">
+            <span class="date">2021.02 – 2025.02</span>
+            <h3>GIST</h3>
+            <p>B.S. in Electrical Engineering and Computer Science; minors in Mathematics and Artificial Intelligence. GPA: 4.11/4.5.</p>
+          </div>
+          <div class="item">
+            <span class="date">2022.06 – 2022.08</span>
+            <h3>UC Berkeley Summer Session</h3>
+            <p>Completed coursework in Foundations of Data Science (Data 8) and Introduction to Probability and Statistics (STAT 20).</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <div class="section-head">
+          <h2>Publications</h2>
+        </div>
+
+        <article class="paper selected">          <div>
+            <div class="paper-meta"><span>BMVC 2026</span><span>Under Review</span><span>First Author</span></div>
+            <h3>Position Matters in the Overlap: Analyzing Chunk Alignment for Long-Sequence 3D Reconstruction</h3>
+            <p><strong>Hanna Bae</strong>, Sojeong Song, Gyojin Han, Sungjae Choi, Junmo Kim</p>
+            <p class="desc">Analyzes position-dependent behavior in overlap-based chunk alignment for long-sequence feed-forward 3D reconstruction and proposes a lightweight correction that improves trajectory consistency without additional feed-forward inference.</p>
+          </div>
+        </article>
+
+        <article class="paper compact">
+          <div>
+            <div class="paper-meta"><span>Journal of Information Systems</span><span>2025</span><span>First Author</span></div>
+            <h3>한국어 표 질의응답 성능 향상을 위한 데이터 전처리 기법 분석</h3>
+            <p><strong>Hanna Bae</strong>, Sanghyuk Won, Jaehong Lee, Woohyuk Jung, Jihwan Woo</p>
+            <p class="desc">Journal of Information Systems, 27(2), 71–87.</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="research-projects" class="section">
+        <div class="section-head">
+          <h2>Research Projects</h2>
+          <p>Selected ongoing research</p>
+        </div>
+
+        <article class="paper">          <div>
+            <div class="paper-meta"><span>Continuous 3D Reconstruction</span><span>Research Project</span></div>
+            <h3>Continuous 3D Reconstruction</h3>
+            <p class="desc">Worked on evaluating long-sequence reconstruction behavior and developing selective update strategies for continuous feed-forward 3D systems.</p>
+          </div>
+        </article>
+
+        <article class="paper">          <div>
+            <div class="paper-meta"><span>Reliable 3D Reconstruction</span><span>Research Project</span></div>
+            <h3>Reliability-Aware 3D Reconstruction</h3>
+            <p class="desc">Worked on dense risk estimation and consistency analysis for identifying unreliable regions in feed-forward 3D reconstruction.</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-head">
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="item">
+            <span class="date">2024.11</span>
+            <h3>CJ OliveNetworks, AI Research Intern</h3>
+            <p>Studied how table representation and preprocessing affect Korean table question answering, and constructed evaluation datasets containing merged and compositional tables.</p>
+          </div>
+          <div class="item">
+            <span class="date">2023.03 – 2024.06</span>
+            <h3>Autonomous Computing Systems Laboratory, Research Intern</h3>
+            <p>Worked on efficient image-based 3D reconstruction for mobile and edge environments, including dense correspondence, semantic filtering, and deployment using TensorRT, CoreML, and ONNX.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2>Additional Projects</h2>
+        </div>
+        <div class="project-grid">
+          <div class="project"><h3>Emotive Canvas</h3><p>Psychological-analysis web page with object detection fine-tuning and Streamlit deployment.</p></div>
+          <div class="project"><h3>Sleep Pattern Analysis</h3><p>Efficient sleep-pattern analysis model combining Residual GRU and U-Net components.</p></div>
+          <div class="project"><h3>Video Rating Classification</h3><p>Automatic age-rating and profanity filtering from video scripts using kcELECTRA fine-tuning.</p></div>
+          <div class="project"><h3>GIFT</h3><p>Gift recommendation psychological-test website; planning and front-end development with React.</p></div>
+        </div>
+      </section>
+
+      <section id="teaching" class="section">
+        <div class="section-head">
+          <h2>Teaching</h2>
+        </div>
+        <ul class="teaching-list">
+          <li><span>2024.09 – 2024.12</span> Teaching Assistant, Differential Equation, GIST</li>
+          <li><span>2024.03 – 2024.06</span> Teaching Assistant, Computer System Theory and Experiments, GIST</li>
+          <li><span>2023.09 – 2023.12</span> Teaching Assistant, Computer Programming (GS1401), GIST</li>
+          <li><span>2023.03 – 2023.06</span> Teaching Assistant, Differential Equation, GIST</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>For research collaboration or questions, please feel free to reach out.</p>
+        <p><a href="mailto:hannabae@kaist.ac.kr">hannabae@kaist.ac.kr</a> · <a href="mailto:kaist.hannabae@gmail.com">kaist.hannabae@gmail.com</a> · <a href="https://github.com/hanna-bae" target="_blank" rel="noopener">GitHub</a></p>
+      </section>
+
+      <footer>
+        <p>© <span id="year"></span> Hanna Bae. Built for GitHub Pages.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
