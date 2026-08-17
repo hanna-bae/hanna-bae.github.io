@@ -1,194 +1,348 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hanna Bae</title>
-  <meta name="description" content="Hanna Bae — M.S. student at KAIST, researching 3D vision, geometric perception, 3D reconstruction, visual SLAM, and autonomous driving." />
-  <meta property="og:title" content="Hanna Bae" />
-  <meta property="og:description" content="M.S. student at KAIST. 3D vision, geometric perception, 3D reconstruction, visual SLAM, and autonomous driving." />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hanna Bae</title>
+<meta name="description" content="Hanna Bae is an M.S. student at KAIST Electrical Engineering researching 3D vision, geometric perception, 3D reconstruction, visual SLAM, and multi-view geometry." />
+<meta name="theme-color" content="#f5f8fc" />
+<meta property="og:title" content="Hanna Bae" />
+<meta property="og:description" content="M.S. student at KAIST EE. 3D vision, geometric perception, 3D reconstruction, and visual SLAM." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hanna-bae.github.io/" />
+<meta property="og:image" content="https://hanna-bae.github.io/assets/profile.jpg" />
+<link rel="icon" href="assets/profile.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <aside class="sidebar" aria-label="Profile">
-      <div class="profile-card">
-        <img class="profile-img" src="assets/profile.svg" alt="Hanna Bae" />
-        <h1>Hanna Bae</h1>
-        <p class="role">M.S. Student, KAIST EE</p>
-        <p class="lab">Statistical Inference &amp; Information Theory Laboratory</p>
-        <p class="tags">3D Vision · 3D Reconstruction · Visual SLAM</p>
-        <div class="link-row" aria-label="contact links">
-          <a href="mailto:hannabae@kaist.ac.kr">Email</a>
-          <a href="https://github.com/hanna-bae" target="_blank" rel="noopener">GitHub</a>
-          <a href="assets/Hanna_Bae_CV.pdf" target="_blank" rel="noopener">CV</a>
-        </div>
-      </div>
-    </aside>
 
-    <main class="content">
-      <nav class="topnav" aria-label="Section navigation">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<a class="skip-link" href="#about">Skip to content</a>
 
-      <section id="about" class="section hero">
-        <p class="eyebrow">3D Vision · Geometric Perception</p>
-        <h2>Hi, I am Hanna.</h2>
-        <p>
-          I am a master's student in Electrical Engineering at KAIST, advised by Prof. Junmo Kim.
-          My research focuses on 3D vision and geometric perception, particularly 3D reconstruction,
-          visual SLAM, multi-view geometry, and autonomous driving.
-        </p>
-        <p>
-          I am broadly interested in reliable 3D scene understanding from visual inputs.
-          My recent work explores how modern 3D reconstruction models can be made more consistent,
-          scalable, and applicable to long real-world sequences.
-        </p>
-        <div class="highlights">
-          <div><strong>KAIST</strong><span>M.S. in EE, 2025–</span></div>
-          <div><strong>GIST</strong><span>B.S. in EECS, Minors in Mathematics and AI, GPA 4.11/4.5</span></div>
-          <div><strong>UC Berkeley</strong><span>Summer Session, Data Science &amp; Statistics</span></div>
-        </div>
-      </section>
-
-
-      <section id="education" class="section">
-        <div class="section-head">
-          <h2>Education</h2>
-        </div>
-        <div class="timeline">
-          <div class="item">
-            <span class="date">2025.02 – Present</span>
-            <h3>KAIST</h3>
-            <p>M.S. in Electrical Engineering, Statistical Inference &amp; Information Theory Laboratory.</p>
-          </div>
-          <div class="item">
-            <span class="date">2021.02 – 2025.02</span>
-            <h3>GIST</h3>
-            <p>B.S. in Electrical Engineering and Computer Science; minors in Mathematics and Artificial Intelligence. GPA: 4.11/4.5.</p>
-          </div>
-          <div class="item">
-            <span class="date">2022.06 – 2022.08</span>
-            <h3>UC Berkeley Summer Session</h3>
-            <p>Completed coursework in Foundations of Data Science (Data 8) and Introduction to Probability and Statistics (STAT 20).</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="publications" class="section">
-        <div class="section-head">
-          <h2>Publications</h2>
-        </div>
-
-        <article class="paper selected">          <div>
-            <div class="paper-meta"><span>Under Review</span></div>
-            <h3>Position Matters in the Overlap: Analyzing Chunk Alignment for Long-Sequence 3D Reconstruction</h3>
-            <p><strong>Hanna Bae</strong>, Sojeong Song, Gyojin Han, Sungjae Choi, Junmo Kim</p>
-            <p class="desc">Analyzes position-dependent behavior in overlap-based chunk alignment for long-sequence feed-forward 3D reconstruction and proposes a lightweight correction that improves trajectory consistency without additional feed-forward inference.</p>
-          </div>
-        </article>
-
-        <article class="paper selected">          <div>
-            <div class="paper-meta"><span>Under Review</span></div>
-            <h3>Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction</h3>
-            <p>Sunghyun Baek, <strong>Hanna Bae</strong>, Minchan Kwon, Junmo Kim</p>
-            </div>
-        </article>
-
-        <article class="paper selected">          <div>
-            <div class="paper-meta"><span>Under Review</span></div>
-            <h3>Adaptive Dense Risk Prediction for Consistent Feed-Forward 3D Reconstruction</h3>
-            <p>Sojeong Song, <strong>Hanna Bae</strong>, Chang D. Yoo, Junmo Kim</p>
-            </div>
-        </article>
-        
-        <article class="paper selected">          <div>
-            <div class="paper-meta"><span>Under Review</span></div>
-            <h3>VistaGS: Multi-View Geometry Foundation Priors for View-Consistent Few-Shot 3D Gaussian Splatting</h3>
-            <p>Sungjae Choi, Gyojin Han, <strong>Hanna Bae</strong>, Junmo Kim</p>
-            </div>
-        </article>
-        
-        <article class="paper selected">          <div>
-            <div class="paper-meta"><span>Under Review</span></div>
-            <h3>Beyond Sequential: Coarse-Stride Skip Edges for Long-Sequence VGGT-Based Reconstruction</h3>
-            <p>Sungjae Choi, <strong>Hanna Bae</strong>, Sunghyun Baek, Junmo Kim</p>
-            </div>
-        </article>
-
-        <article class="paper compact">
-          <div>
-            <div class="paper-meta"><span>Journal of Information Systems</span></div>
-            <h3>한국어 표 질의응답 성능 향상을 위한 데이터 전처리 기법 분석</h3>
-            <p><strong>Hanna Bae</strong>, Sanghyuk Won, Jaehong Lee, Woohyuk Jung, Jihwan Woo</p>
-            <p class="desc">Journal of Information Systems, 27(2), 71–87.</p>
-          </div>
-        </article>
-      </section>
-
-      <section id="experience" class="section">
-        <div class="section-head">
-          <h2>Experience</h2>
-        </div>
-        <div class="timeline">
-          <div class="item">
-            <span class="date">2024.11</span>
-            <h3>CJ OliveNetworks, AI Research Intern</h3>
-            <p>Studied how table representation and preprocessing affect Korean table question answering, and constructed evaluation datasets containing merged and compositional tables.</p>
-          </div>
-          <div class="item">
-            <span class="date">2023.03 – 2024.06</span>
-            <h3>Autonomous Computing Systems Laboratory, Research Intern</h3>
-            <p>Worked on efficient image-based 3D reconstruction for mobile and edge environments, including dense correspondence, semantic filtering, and deployment using TensorRT, CoreML, and ONNX.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="section-head">
-          <h2>Additional Projects</h2>
-        </div>
-        <div class="project-grid">
-          <div class="project"><h3>Robust Visual-Inertial Odometry</h3><p>Enhanced an OpenVINS-based VIO pipeline using IMU and depth anomaly rejection, Hampel filtering, and MASt3R-SLAM-based global pose correction. Analyzed localization failures under noisy IMU signals, texture-deficient scenes, and long-term trajectory drift.</p></div>
-          <div class="project"><h3>Emotive Canvas</h3><p>Psychological-analysis web page with object detection fine-tuning and Streamlit deployment.</p></div>
-          <div class="project"><h3>Sleep Pattern Analysis</h3><p>Efficient sleep-pattern analysis model combining Residual GRU and U-Net components.</p></div>
-          <div class="project"><h3>Video Rating Classification</h3><p>Automatic age-rating and profanity filtering from video scripts using kcELECTRA fine-tuning.</p></div>
-          <div class="project"><h3>GIFT</h3><p>Gift recommendation psychological-test website; planning and front-end development with React.</p></div>
-        </div>
-      </section>
-
-      <section id="teaching" class="section">
-        <div class="section-head">
-          <h2>Teaching</h2>
-        </div>
-        <ul class="teaching-list">
-          <li><span>2024.09 – 2024.12</span> Teaching Assistant, Differential Equation, GIST</li>
-          <li><span>2024.03 – 2024.06</span> Teaching Assistant, Computer System Theory and Experiments, GIST</li>
-          <li><span>2023.09 – 2023.12</span> Teaching Assistant, Computer Programming (GS1401), GIST</li>
-          <li><span>2023.03 – 2023.06</span> Teaching Assistant, Differential Equation, GIST</li>
-        </ul>
-      </section>
-
-      <section id="contact" class="section contact">
-        <h2>Contact</h2>
-        <p>For research collaboration or questions, please feel free to reach out.</p>
-        <p><a href="mailto:hannabae@kaist.ac.kr">hannabae@kaist.ac.kr</a> · <a href="mailto:kaist.hannabae@gmail.com">kaist.hannabae@gmail.com</a> · <a href="https://github.com/hanna-bae" target="_blank" rel="noopener">GitHub</a></p>
-      </section>
-
-      <footer>
-        <p>© <span id="year"></span> Hanna Bae. Built for GitHub Pages.</p>
-      </footer>
-    </main>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">Hanna Bae</a>
+    <nav class="nav" aria-label="Section navigation">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#skills">Skills</a>
+    </nav>
   </div>
-  <script src="script.js"></script>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO / ABOUT ============ -->
+  <section id="about" class="wrap hero">
+    <div class="hero-head">
+      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Hanna Bae" width="800" height="800" />
+      <div class="hero-id">
+        <h1>Hanna Bae</h1>
+        <p class="role">M.S. Student at KAIST Electrical Engineering</p>
+        <p class="role sub">Statistical Inference &amp; Information Theory Laboratory</p>
+        <p class="mail"><a href="mailto:hannabae@kaist.ac.kr">hannabae@kaist.ac.kr</a></p>
+        <ul class="social" aria-label="Links">
+          <li><a href="https://github.com/hanna-bae" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="assets/CV_Hanna_Bae.pdf" target="_blank" rel="noopener">CV</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bio">
+      <p>
+        I am an M.S. student in the School of Electrical Engineering at KAIST, working in the
+        Statistical Inference &amp; Information Theory Laboratory under Prof. Junmo Kim. My research
+        is in 3D vision and geometric perception: 3D reconstruction, visual SLAM, and multi-view
+        geometry, with autonomous driving as the setting I care most about.
+      </p>
+      <p>
+        Recent work asks how feed-forward 3D reconstruction models hold up on long, real-world
+        sequences &mdash; where their geometry drifts, why it drifts, and what can be corrected
+        without paying for another forward pass. Before that, at GIST, I worked on making
+        reconstruction and feature matching run within the latency and memory budgets of mobile and
+        edge devices.
+      </p>
+      <ul class="tags" aria-label="Research interests">
+        <li>3D Vision</li>
+        <li>Geometric Perception</li>
+        <li>3D Reconstruction</li>
+        <li>Visual SLAM</li>
+        <li>Multi-View Geometry</li>
+        <li>Autonomous Driving</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications" class="wrap section">
+    <h2 class="section-title">Publications</h2>
+
+    <ol class="pubs">
+      <li class="pub">
+        <div class="pub-index">01</div>
+        <div class="pub-body">
+          <h3>Position Matters in the Overlap: Analyzing Chunk Alignment for Long-Sequence 3D Reconstruction</h3>
+          <p class="authors"><strong>Hanna Bae</strong>, Sojeong Song, Gyojin Han, Sungjae Choi, and Junmo Kim</p>
+          <p class="venue">Manuscript, under review</p>
+          <p class="keywords">Long-sequence reconstruction &middot; Chunk alignment</p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <div class="pub-index">02</div>
+        <div class="pub-body">
+          <h3>Adaptive Dense Risk Prediction for Consistent Feed-Forward 3D Reconstruction</h3>
+          <p class="authors">Sojeong Song, <strong>Hanna Bae</strong>, Chang D. Yoo, and Junmo Kim</p>
+          <p class="venue">Manuscript, under review</p>
+          <p class="keywords">3D reconstruction &middot; Risk prediction</p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <div class="pub-index">03</div>
+        <div class="pub-body">
+          <h3>Information-Aware Test-Time Update and Dynamic Token Reinitialization for Continuous 3D Reconstruction</h3>
+          <p class="authors">Sunghyun Baek, <strong>Hanna Bae</strong>, Minchan Kwon, and Junmo Kim</p>
+          <p class="venue">Manuscript, under review</p>
+          <p class="keywords">Continuous reconstruction &middot; Test-time adaptation</p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <div class="pub-index">04</div>
+        <div class="pub-body">
+          <h3>VistaGS: Multi-View Geometry Foundation Priors for View-Consistent Few-Shot 3D Gaussian Splatting</h3>
+          <p class="authors">Sungjae Choi, Gyojin Han, <strong>Hanna Bae</strong>, and Junmo Kim</p>
+          <p class="venue">Manuscript, under review</p>
+          <p class="keywords">Gaussian splatting &middot; Few-shot novel view synthesis</p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <div class="pub-index">05</div>
+        <div class="pub-body">
+          <h3>VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges</h3>
+          <p class="authors">Sungjae Choi, <strong>Hanna Bae</strong>, Sunghyun Baek, and Junmo Kim</p>
+          <p class="venue">Manuscript, under review</p>
+          <p class="keywords">Pose graph &middot; Long-sequence reconstruction</p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <div class="pub-index">06</div>
+        <div class="pub-body">
+          <h3>Data Preprocessing Methods for Improving Korean Table Question Answering</h3>
+          <p class="authors"><strong>Hanna Bae</strong>, Sanghyuk Won, Jaehong Lee, Woohyuk Jung, and Jihwan Woo</p>
+          <p class="venue">Journal of Information Systems, 27(2), 71&ndash;87, 2025</p>
+          <p class="keywords">Table question answering &middot; Data-centric AI</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ RESEARCH EXPERIENCE ============ -->
+  <section id="experience" class="wrap section">
+    <h2 class="section-title">Research Experience</h2>
+
+    <div class="entries">
+      <article class="entry">
+        <div class="entry-date">Nov 2024<span class="place">Seoul, Korea</span></div>
+        <div class="entry-body">
+          <h3>AI Research Intern</h3>
+          <p class="org">CJ OliveNetworks AI Research Lab</p>
+          <ul class="bullets">
+            <li>Built Korean table question-answering data with merged and composite structures, and compared multiple table representations.</li>
+            <li>Developed the internship study into a first-author journal publication.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">Mar 2023 &mdash; Jun 2024<span class="place">Gwangju, Korea</span></div>
+        <div class="entry-body">
+          <h3>Research Intern</h3>
+          <p class="org">Autonomous Computing Systems Lab (ACSL), GIST</p>
+          <ul class="bullets">
+            <li>Studied mobile and edge 3D reconstruction, dense correspondence, and detector-free feature matching for SLAM front ends.</li>
+            <li>Explored deployment pipelines with TensorRT, ONNX, CoreML, and TinyML, with attention to accuracy&ndash;latency&ndash;memory trade-offs.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="wrap section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="entries">
+      <article class="entry">
+        <div class="entry-date">2026<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-body">
+          <h3>On-Device AI for Raman Spectroscopy</h3>
+          <p class="org">Industry&ndash;academic research project</p>
+          <ul class="bullets">
+            <li>Designed a lightweight pipeline for spectral preprocessing, classification, quality assessment, and out-of-distribution detection under device-level latency constraints.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">2025<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-body">
+          <h3>Retriever-Free Visual SLAM</h3>
+          <p class="org">Research project</p>
+          <ul class="bullets">
+            <li>Combined a MASt3R-SLAM front end with a feed-forward multi-view reconstruction back end through dense matching rather than explicit image retrieval.</li>
+            <li>Studied keyframe selection, stationary-frame handling, loop closure, pose-graph optimization, and yaw drift over long sequences.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">2025<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-body">
+          <h3>Camera&ndash;Radar Fusion for 3D Object Detection</h3>
+          <p class="org">Research project</p>
+          <ul class="bullets">
+            <li>Implemented camera&ndash;radar feature fusion with teacher&ndash;student distillation, and investigated radar augmentation drift, cross-modal alignment, and illumination robustness.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">2025<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-body">
+          <h3>OpenVINS&ndash;MASt3R Hybrid Visual SLAM</h3>
+          <p class="org">Team project</p>
+          <ul class="bullets">
+            <li>Analyzed visual-inertial odometry under noisy IMU and depth-derived pose corruption, and explored anomaly rejection and Hampel filtering for stable estimation.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">2024<span class="place">Gwangju, Korea</span></div>
+        <div class="entry-body">
+          <h3>Detector-Free Feature Matching for SLAM Front-End</h3>
+          <p class="org">B.S. thesis</p>
+          <ul class="bullets">
+            <li>Studied detector-free local feature matching and semantic filtering for visual SLAM, evaluated on MegaDepth.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">2023 &mdash; 2024<span class="place">Gwangju, Korea</span></div>
+        <div class="entry-body">
+          <h3>Additional Machine Learning Projects</h3>
+          <p class="org">Course and independent projects</p>
+          <ul class="bullets">
+            <li>Built sleep-stage classification, Korean text classification, profanity filtering, and an object-detection demo deployed with Streamlit.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="wrap section">
+    <h2 class="section-title">Education</h2>
+
+    <div class="entries">
+      <article class="entry">
+        <div class="entry-date">Feb 2025 &mdash; Present<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-body">
+          <h3>M.S. in School of Electrical Engineering</h3>
+          <p class="org">Korea Advanced Institute of Science and Technology</p>
+          <ul class="bullets">
+            <li>Statistical Inference &amp; Information Theory Laboratory, advised by Prof. Junmo Kim.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">Feb 2021 &mdash; Feb 2025<span class="place">Gwangju, Korea</span></div>
+        <div class="entry-body">
+          <h3>B.S. in Electrical Engineering and Computer Science</h3>
+          <p class="org">Gwangju Institute of Science and Technology</p>
+          <ul class="bullets">
+            <li>Minors in Mathematics and Artificial Intelligence.</li>
+            <li>GPA 4.11 / 4.5.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">Jun 2022 &mdash; Aug 2022<span class="place">Berkeley, CA, USA</span></div>
+        <div class="entry-body">
+          <h3>Summer Session</h3>
+          <p class="org">University of California, Berkeley</p>
+          <ul class="bullets">
+            <li>Data 8: Foundations of Data Science; STAT 20: Introduction to Probability and Statistics.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ TEACHING ============ -->
+  <section id="teaching" class="wrap section">
+    <h2 class="section-title">Teaching</h2>
+
+    <div class="entries">
+      <article class="entry">
+        <div class="entry-date">Spring 2023, Fall 2024</div>
+        <div class="entry-body">
+          <h3>Teaching Assistant, Differential Equations</h3>
+          <p class="org">GIST</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Spring 2024</div>
+        <div class="entry-body">
+          <h3>Teaching Assistant, Computer System Theory and Experiments</h3>
+          <p class="org">GIST</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Fall 2023</div>
+        <div class="entry-body">
+          <h3>Teaching Assistant, Computer Programming</h3>
+          <p class="org">GIST</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="wrap section">
+    <h2 class="section-title">Skills</h2>
+
+    <dl class="skills">
+      <dt>Programming</dt>
+      <dd>Python (PyTorch, NumPy, pandas, OpenCV), C++</dd>
+
+      <dt>3D Vision</dt>
+      <dd>3D reconstruction, visual SLAM, multi-view geometry, pose estimation, dense correspondence, trajectory evaluation</dd>
+
+      <dt>Systems</dt>
+      <dd>Linux, Git, Docker / Conda, TensorRT, ONNX, CoreML, LaTeX</dd>
+    </dl>
+  </section>
+
+  <footer class="wrap footer">
+    <p>Last updated August 2026. &copy; <span id="year"></span> Hanna Bae.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
