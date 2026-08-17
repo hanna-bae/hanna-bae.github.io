@@ -113,11 +113,10 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 .profile-inner { position: sticky; top: 104px; }
 
 .portrait {
-  width: 100%;
-  max-width: 220px;
-  aspect-ratio: 1 / 1;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  object-position: 50% 32%;
+  object-position: 50% 20%;
   border-radius: 3px;
   display: block;
   background: var(--surface);
@@ -318,7 +317,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 @media (max-width: 720px) {
   .layout { grid-template-columns: 1fr; gap: 40px; padding-top: 44px; }
   .profile-inner { position: static; display: grid; grid-template-columns: 108px 1fr; gap: 20px; align-items: center; }
-  .portrait { max-width: 108px; }
+  .portrait { width: 108px; height: 108px; }
   .profile h1 { margin-top: 0; font-size: 27px; }
   .contact { grid-column: 1 / -1; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 18px; }
   .contact li { margin-bottom: 0; }
