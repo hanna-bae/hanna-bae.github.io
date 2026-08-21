@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=5" />
+<link rel="stylesheet" href="style.css?v=6" />
 </head>
 <body>
 
@@ -58,27 +58,15 @@
   <main class="content">
 
     <section id="about" class="section first">
-      <p class="eyebrow">3D Vision &middot; Geometric Perception</p>
       <div class="bio">
         <p class="lede">
-          I work on 3D vision and geometric perception &mdash; 3D reconstruction, visual SLAM, and
-          multi-view geometry &mdash; with autonomous driving as the setting I care most about.
-        </p>
-        <p>
-          I am an M.S. student in the School of Electrical Engineering at KAIST, in the Statistical
-          Inference &amp; Information Theory Laboratory under Prof. Junmo Kim. Recent work asks how
-          feed-forward 3D reconstruction models hold up on long, real-world sequences: where their
-          geometry drifts, why it drifts, and what can be corrected without paying for another
-          forward pass.
-        </p>
-        <p>
-          Alongside that, I am the principal investigator of a National Research Foundation of Korea
-          grant on camera&ndash;radar 3D object detection, which pushes the same questions about
-          geometry and reliability into the sensor-fusion setting.
-        </p>
-        <p>
-          Before KAIST, at GIST, I worked on making reconstruction and feature matching fit inside
-          the latency and memory budgets of mobile and edge devices.
+          I am an M.S. student in the School of Electrical Engineering at KAIST, in the
+          <a href="https://siit.kaist.ac.kr/" target="_blank" rel="noopener">Statistical Inference &amp; Information Theory Lab</a>
+          under Prof. Junmo Kim. I work on 3D vision and geometric perception, asking how feed-forward
+          reconstruction models hold up on long, real-world sequences &mdash; where their geometry drifts,
+          why, and what can be corrected without another forward pass. I am also the principal investigator
+          of an NRF grant on camera&ndash;radar 3D object detection, which carries the same questions about
+          geometry and reliability into sensor fusion.
         </p>
       </div>
       <ul class="tags" aria-label="Research interests">
@@ -158,10 +146,7 @@
         <div class="entry-body">
           <h3>SpecFusion: Camera&ndash;Radar 3D Object Detection</h3>
           <p class="org">NRF Master&rsquo;s Student Research Grant &middot; Sole principal investigator</p>
-          <ul class="bullets">
-            <li>Authored the proposal and won the grant through national competitive review. The program funds a single student PI with no co-investigators, so research design, execution, budget, and reporting are all my responsibility.</li>
-            <li>Designing a two-path fusion architecture: BEV early fusion with radar-assisted depth sampling and structure-aware depth enhancement, combined with late fusion over pseudo-depth and geometry priors, targeting spurious points, key-point missing, and non-positional disturbance on nuScenes and View-of-Delft.</li>
-          </ul>
+          <p class="summary">Won the grant through national competitive review as the sole PI, with full responsibility for research design, execution, and reporting. Designing a two-path fusion architecture that pairs BEV early fusion using radar-assisted depth with late fusion over pseudo-depth and geometry priors.</p>
         </div>
       </article>
 
@@ -170,9 +155,7 @@
         <div class="entry-body">
           <h3>Physically Consistent 4D World Generation</h3>
           <p class="org">NRF Excellent Research Program, Core Research (Type B) &middot; Leading the lab task</p>
-          <ul class="bullets">
-            <li>Exploring feed-forward approaches to 4D scene generation under physical-consistency constraints.</li>
-          </ul>
+          <p class="summary">Exploring feed-forward approaches to 4D scene generation under physical-consistency constraints.</p>
         </div>
       </article>
 
@@ -181,10 +164,7 @@
         <div class="entry-body">
           <h3>Culture-Domain Korean NER &amp; Group Fairness</h3>
           <p class="org">IITP AI Technology Utilization Improvement Program &middot; Leading the lab task</p>
-          <ul class="bullets">
-            <li>Constructed a culture-domain Korean NER dataset from scratch, labeled into the KLUE 6-type schema with an LLM pipeline, with lossless format conversion and document-level leakage prevention in the split.</li>
-            <li>Improved entity F1 on the culture-domain test set through domain-adaptive retraining, and annotated group attributes across the corpus so that per-group performance gaps can be measured.</li>
-          </ul>
+          <p class="summary">Built a culture-domain Korean NER dataset from scratch and improved entity F1 through domain-adaptive retraining, then annotated group attributes across the corpus so per-group performance gaps can be measured.</p>
         </div>
       </article>
 
@@ -193,10 +173,7 @@
         <div class="entry-body">
           <h3>Fluorescence&ndash;Raman Multimodal AI Analysis Engine</h3>
           <p class="org">COMPA Advanced Research Equipment Commercialization &middot; KAIST subcontract</p>
-          <ul class="bullets">
-            <li>Built a three-stage statistical Raman denoising pipeline with reference-free baseline estimation, recovering reference peaks from spectra dominated by substrate fluorescence.</li>
-            <li>Validated deep-learning fluorescence denoising with SAM-based automatic ROI extraction, and designed a metadata-conditioned adapter for varying magnification and excitation wavelengths.</li>
-          </ul>
+          <p class="summary">Built a statistical Raman denoising pipeline with reference-free baseline estimation, validated deep-learning fluorescence denoising with SAM-based ROI extraction, and designed a metadata-conditioned adapter for varying acquisition conditions.</p>
         </div>
       </article>
 
@@ -205,9 +182,7 @@
         <div class="entry-body">
           <h3>OpenVINS&ndash;MASt3R Hybrid Visual-Inertial SLAM</h3>
           <p class="org">Team project &middot; HILTI SLAM Challenge</p>
-          <ul class="bullets">
-            <li>Diagnosed pose corruption from Z-axis accelerometer noise that MSCKF failed to absorb, then combined IMU and depth gating with a Hampel median filter and MASt3R-SLAM global correction.</li>
-          </ul>
+          <p class="summary">Diagnosed pose corruption from Z-axis accelerometer noise that MSCKF failed to absorb, then combined IMU and depth gating with a Hampel median filter and MASt3R-SLAM global correction.</p>
         </div>
       </article>
 
@@ -216,9 +191,7 @@
         <div class="entry-body">
           <h3>SegMatching: Semantic Filtering for Detector-Free Feature Matching</h3>
           <p class="org">B.S. thesis</p>
-          <ul class="bullets">
-            <li>Found that detector-free matching concentrates correspondences on regions unreliable for pose estimation, and filtered them with semantic masks and per-class stability priors, improving AUC on MegaDepth-1500 at a documented cost in correspondence count.</li>
-          </ul>
+          <p class="summary">Found that detector-free matching concentrates correspondences on regions unreliable for pose estimation, and filtered them with semantic masks and per-class stability priors, improving AUC on MegaDepth-1500.</p>
         </div>
       </article>
     </section>
@@ -231,9 +204,7 @@
           <h3>AI Research Intern</h3>
           <p class="org">CJ OliveNetworks AI Research Lab</p>
           <ul class="bullets">
-            <li>Built a Korean table QA dataset of 13,200 question&ndash;answer pairs spanning simple, merged, and composite table structures, distilled from 400K AI Hub tables and balanced across six domains.</li>
-            <li>Showed that the optimal table serialization depends on structure &mdash; Numpy for simple, Text for merged, HTML for composite &mdash; lifting average EM/F1 from 43.5/58.1 to 46.5/60.8 over the HTML-only baseline.</li>
-            <li>Developed the internship study into a first-author journal publication.</li>
+            <li>Built a Korean table QA dataset of 13,200 pairs across simple, merged, and composite structures, and showed that the best table serialization depends on structure. Developed into a first-author journal publication.</li>
           </ul>
         </div>
       </article>
@@ -331,6 +302,7 @@
       <p>Last updated August 2026. &copy; <span id="year"></span> Hanna Bae.</p>
     </footer>
 
+    <p class="updated">Last updated August 2026.</p>
   </main>
 </div>
 

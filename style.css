@@ -187,13 +187,13 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 .bio p { margin: 0 0 15px; color: var(--ink-soft); }
 .bio .lede {
   font-family: var(--display);
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 400;
   font-variation-settings: "opsz" 30, "SOFT" 0, "WONK" 0;
-  line-height: 1.5;
+  line-height: 1.62;
   letter-spacing: -0.005em;
   color: var(--ink);
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 7px; margin: 22px 0 0; padding: 0; }
@@ -239,6 +239,9 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 .authors strong { font-weight: 600; color: var(--ink); }
 
 .venue { margin: 2px 0 0; font-size: 13px; font-style: italic; color: var(--muted); }
+.summary { margin: 4px 0 0; font-size: 14px; line-height: 1.62; color: var(--ink-soft); }
+.bio .lede a { color: inherit; text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.updated { margin: 40px 0 0; font-size: 12px; color: var(--faint); }
 .authors .note { font-size: 12px; color: var(--faint); font-style: italic; white-space: nowrap; }
 
 .keywords {
