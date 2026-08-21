@@ -27,7 +27,6 @@
     <nav class="nav" aria-label="Section navigation">
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
-      <a href="#grants">Grants</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
@@ -151,46 +150,74 @@
       </ol>
     </section>
 
-    <section id="grants" class="section">
-      <h2 class="section-title">Research Grants</h2>
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
       <article class="entry">
-        <div class="entry-date">Sep 2025 &mdash; Aug 2026<span class="place">KRW 12,000,000</span></div>
+        <div class="entry-date">Sep 2025 &mdash; Aug 2026<span class="place">Daejeon, Korea</span></div>
         <div class="entry-body">
-          <h3>Master&rsquo;s Student Research Grant, National Research Foundation of Korea</h3>
-          <p class="org">Sole Principal Investigator &middot; RS-2025-25398106</p>
+          <h3>SpecFusion: Camera&ndash;Radar 3D Object Detection</h3>
+          <p class="org">NRF Master&rsquo;s Student Research Grant &middot; Sole principal investigator</p>
           <ul class="bullets">
-            <li>SpecFusion: Camera&ndash;Radar 3D Object Detection with Specialized Modality Fusion.</li>
             <li>Authored the proposal and won the grant through national competitive review. The program funds a single student PI with no co-investigators, so research design, execution, budget, and reporting are all my responsibility.</li>
+            <li>Designing a two-path fusion architecture: BEV early fusion with radar-assisted depth sampling and structure-aware depth enhancement, combined with late fusion over pseudo-depth and geometry priors, targeting spurious points, key-point missing, and non-positional disturbance on nuScenes and View-of-Delft.</li>
           </ul>
         </div>
       </article>
+
       <article class="entry">
-        <div class="entry-date">Mar 2026 &mdash; Present<span class="place">IITP / MSIT</span></div>
+        <div class="entry-date">2026 &mdash; Present<span class="place">Daejeon, Korea</span></div>
         <div class="entry-body">
-          <h3>AI Technology Utilization Improvement Program</h3>
-          <p class="org">Participating Researcher &middot; RS-2022-II220184</p>
+          <h3>Physically Consistent 4D World Generation</h3>
+          <p class="org">NRF Excellent Research Program, Core Research (Type B) &middot; Leading the lab task</p>
           <ul class="bullets">
-            <li>Joined as a supporting researcher and now lead the lab task on adaptive AI under evolving ethics policy.</li>
+            <li>Exploring feed-forward approaches to 4D scene generation under physical-consistency constraints.</li>
           </ul>
         </div>
       </article>
+
       <article class="entry">
-        <div class="entry-date">2026 &mdash; Present<span class="place">NRF</span></div>
+        <div class="entry-date">Mar 2026 &mdash; Present<span class="place">Daejeon, Korea</span></div>
         <div class="entry-body">
-          <h3>Excellent Research Program &mdash; Core Research (Type B)</h3>
-          <p class="org">Participating Researcher &middot; RS-2026-25470670</p>
+          <h3>Culture-Domain Korean NER &amp; Group Fairness</h3>
+          <p class="org">IITP AI Technology Utilization Improvement Program &middot; Leading the lab task</p>
           <ul class="bullets">
-            <li>Leading the lab task on feed-forward 4D scene generation with physical-consistency constraints.</li>
+            <li>Constructed a culture-domain Korean NER dataset from scratch, labeled into the KLUE 6-type schema with an LLM pipeline, with lossless format conversion and document-level leakage prevention in the split.</li>
+            <li>Improved entity F1 on the culture-domain test set through domain-adaptive retraining, and annotated group attributes across the corpus so that per-group performance gaps can be measured.</li>
           </ul>
         </div>
       </article>
+
       <article class="entry">
-        <div class="entry-date">Apr &mdash; Jun 2026<span class="place">COMPA / MSIT</span></div>
+        <div class="entry-date">Apr &mdash; Jun 2026<span class="place">Daejeon, Korea</span></div>
         <div class="entry-body">
-          <h3>Advanced Research Equipment Commercialization (Pre-Planning)</h3>
-          <p class="org">Participating Researcher, KAIST subcontract &middot; RS-2026-25536057</p>
+          <h3>Fluorescence&ndash;Raman Multimodal AI Analysis Engine</h3>
+          <p class="org">COMPA Advanced Research Equipment Commercialization &middot; KAIST subcontract</p>
           <ul class="bullets">
-            <li>Delivered the multimodal AI analysis engine for a platform integrating fluorescence imaging and Raman spectroscopy.</li>
+            <li>Built a three-stage statistical Raman denoising pipeline with reference-free baseline estimation, recovering reference peaks from spectra dominated by substrate fluorescence.</li>
+            <li>Validated deep-learning fluorescence denoising with SAM-based automatic ROI extraction, and designed a metadata-conditioned adapter for varying magnification and excitation wavelengths.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">2025<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-body">
+          <h3>OpenVINS&ndash;MASt3R Hybrid Visual-Inertial SLAM</h3>
+          <p class="org">Team project &middot; HILTI SLAM Challenge</p>
+          <ul class="bullets">
+            <li>Diagnosed pose corruption from Z-axis accelerometer noise that MSCKF failed to absorb, then combined IMU and depth gating with a Hampel median filter and MASt3R-SLAM global correction.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">2024<span class="place">Gwangju, Korea</span></div>
+        <div class="entry-body">
+          <h3>SegMatching: Semantic Filtering for Detector-Free Feature Matching</h3>
+          <p class="org">B.S. thesis</p>
+          <ul class="bullets">
+            <li>Found that detector-free matching concentrates correspondences on regions unreliable for pose estimation, and filtered them with semantic masks and per-class stability priors, improving AUC on MegaDepth-1500 at a documented cost in correspondence count.</li>
           </ul>
         </div>
       </article>
@@ -218,68 +245,6 @@
           <ul class="bullets">
             <li>Researched mobile and edge 3D reconstruction, dense correspondence, and detector-free feature matching for SLAM front ends.</li>
             <li>Explored deployment pipelines with TensorRT, ONNX, CoreML, and TinyML, with attention to accuracy&ndash;latency&ndash;memory trade-offs.</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <section id="projects" class="section">
-      <h2 class="section-title">Projects</h2>
-      <article class="entry">
-        <div class="entry-date">Sep 2025 &mdash; Aug 2026<span class="place">Daejeon, Korea</span></div>
-        <div class="entry-body">
-          <h3>SpecFusion: Camera&ndash;Radar 3D Object Detection</h3>
-          <p class="org">NRF research grant &middot; Sole principal investigator</p>
-          <ul class="bullets">
-            <li>Designing a two-path fusion architecture: BEV early fusion with radar-assisted depth sampling and structure-aware depth enhancement, combined with late fusion over pseudo-depth and geometry priors.</li>
-            <li>Targeting known radar failure modes &mdash; spurious points, key-point missing, and non-positional disturbance &mdash; on nuScenes and View-of-Delft.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry-date">Apr &mdash; Jun 2026<span class="place">Daejeon, Korea</span></div>
-        <div class="entry-body">
-          <h3>Fluorescence&ndash;Raman Multimodal AI Analysis Engine</h3>
-          <p class="org">Industry&ndash;academic project &middot; KAIST subcontract</p>
-          <ul class="bullets">
-            <li>Built a three-stage statistical Raman denoising pipeline &mdash; cosmic-ray removal, baseline correction, and Savitzky&ndash;Golay smoothing &mdash; with reference-free baseline estimation for fluorescent substrates.</li>
-            <li>Validated deep-learning fluorescence denoising with SAM-based automatic ROI extraction, quantified domain-mismatch limits, and designed a metadata-conditioned adapter for varying magnification and excitation wavelengths.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry-date">2025<span class="place">Daejeon, Korea</span></div>
-        <div class="entry-body">
-          <h3>OpenVINS&ndash;MASt3R Hybrid Visual-Inertial SLAM</h3>
-          <p class="org">Team project &middot; HILTI SLAM Challenge</p>
-          <ul class="bullets">
-            <li>Diagnosed abrupt pose corruption in static states caused by Z-axis accelerometer noise that MSCKF failed to absorb, then built depth and IMU gating modules for anomaly rejection.</li>
-            <li>Added a Hampel median filter over raw IMU signals; the combined pipeline raised the HILTI score on exp02 from 0 to 0.45 and on exp15 from 6.7 to 22.22.</li>
-            <li>Integrated MASt3R-SLAM global correction with keyframe selection, retrieval-based candidate search, dense-matching verification, and Gauss&ndash;Newton pose-graph optimization.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry-date">Apr 2026 &mdash; Present<span class="place">Daejeon, Korea</span></div>
-        <div class="entry-body">
-          <h3>Culture-Domain Korean NER &amp; Group-Fairness Dataset</h3>
-          <p class="org">Government-funded research project</p>
-          <ul class="bullets">
-            <li>Constructed a culture-domain Korean NER dataset from scratch &mdash; 5,191 sentences and 20,384 entities &mdash; labeled into the KLUE 6-type schema, with lossless format conversion and document-level leakage prevention in the split.</li>
-            <li>Raised entity F1 on the culture test set from 0.725 to 0.888 through domain-adaptive retraining while retaining performance on KLUE.</li>
-            <li>Annotated group attributes across the corpus so that per-group performance gaps can be measured, establishing the basis for fairness-gap reduction work.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry-date">2024<span class="place">Gwangju, Korea</span></div>
-        <div class="entry-body">
-          <h3>SegMatching: Semantic Filtering for Detector-Free Feature Matching</h3>
-          <p class="org">B.S. thesis</p>
-          <ul class="bullets">
-            <li>Found through qualitative analysis of TopicFM that dense correspondences concentrate on regions unreliable for pose estimation &mdash; sky, foliage, and people.</li>
-            <li>Proposed a post-matching filter using ADE20K semantic segmentation masks with per-class stability priors, improving AUC@5&deg; and AUC@10&deg; on MegaDepth-1500 over TopicFM.</li>
-            <li>Documented the trade-offs: AUC@20&deg; fell slightly from the reduced correspondence count, alongside the added segmentation cost and an outdoor-biased design.</li>
           </ul>
         </div>
       </article>
