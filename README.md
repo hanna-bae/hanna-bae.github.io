@@ -8,7 +8,7 @@ Static GitHub Pages homepage for Hanna Bae.
 2. Upload all files in this folder to the repository root.
 3. Go to **Settings → Pages** and set the branch to `main` and folder to `/root`.
 4. Replace `assets/profile.svg` with a real profile photo if desired.
-5. Update publication links when papers become public.
+5. Update publication venues and links only after papers are accepted — listing venue names while a submission is under double-blind review can break anonymity.
 
 ## Notes
 

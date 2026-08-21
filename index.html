@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=4" />
+<link rel="stylesheet" href="style.css?v=5" />
 </head>
 <body>
 
@@ -27,6 +27,7 @@
     <nav class="nav" aria-label="Section navigation">
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
+      <a href="#grants">Grants</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
@@ -72,6 +73,11 @@
           forward pass.
         </p>
         <p>
+          Alongside that, I am the principal investigator of a National Research Foundation of Korea
+          grant on camera&ndash;radar 3D object detection, which pushes the same questions about
+          geometry and reliability into the sensor-fusion setting.
+        </p>
+        <p>
           Before KAIST, at GIST, I worked on making reconstruction and feature matching fit inside
           the latency and memory budgets of mobile and edge devices.
         </p>
@@ -80,6 +86,7 @@
         <li>3D Reconstruction</li>
         <li>Visual SLAM</li>
         <li>Multi-View Geometry</li>
+        <li>Sensor Fusion</li>
         <li>Autonomous Driving</li>
       </ul>
     </section>
@@ -92,12 +99,21 @@
           <div class="pub-body">
             <h3>Position Matters in the Overlap: Analyzing Chunk Alignment for Long-Sequence 3D Reconstruction</h3>
             <p class="authors"><strong>Hanna Bae</strong>, Sojeong Song, Gyojin Han, Sungjae Choi, and Junmo Kim</p>
-            <p class="venue">Manuscript, under review</p>
+            <p class="venue">Manuscript, under review &middot; First author</p>
             <p class="keywords">Long-sequence reconstruction &middot; Chunk alignment</p>
           </div>
         </li>
         <li class="pub">
           <div class="pub-index">02</div>
+          <div class="pub-body">
+            <h3>VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges</h3>
+            <p class="authors">Sungjae Choi*, <strong>Hanna Bae*</strong>, Sunghyun Baek, and Junmo Kim <span class="note">(*equal contribution)</span></p>
+            <p class="venue">Manuscript, under review &middot; Co-first author</p>
+            <p class="keywords">Pose graph &middot; Long-sequence reconstruction</p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="pub-index">03</div>
           <div class="pub-body">
             <h3>Adaptive Dense Risk Prediction for Consistent Feed-Forward 3D Reconstruction</h3>
             <p class="authors">Sojeong Song, <strong>Hanna Bae</strong>, Chang D. Yoo, and Junmo Kim</p>
@@ -106,16 +122,16 @@
           </div>
         </li>
         <li class="pub">
-          <div class="pub-index">03</div>
+          <div class="pub-index">04</div>
           <div class="pub-body">
-            <h3>Information-Aware Test-Time Update and Dynamic Token Reinitialization for Continuous 3D Reconstruction</h3>
+            <h3>Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction</h3>
             <p class="authors">Sunghyun Baek, <strong>Hanna Bae</strong>, Minchan Kwon, and Junmo Kim</p>
             <p class="venue">Manuscript, under review</p>
             <p class="keywords">Continuous reconstruction &middot; Test-time adaptation</p>
           </div>
         </li>
         <li class="pub">
-          <div class="pub-index">04</div>
+          <div class="pub-index">05</div>
           <div class="pub-body">
             <h3>VistaGS: Multi-View Geometry Foundation Priors for View-Consistent Few-Shot 3D Gaussian Splatting</h3>
             <p class="authors">Sungjae Choi, Gyojin Han, <strong>Hanna Bae</strong>, and Junmo Kim</p>
@@ -124,24 +140,60 @@
           </div>
         </li>
         <li class="pub">
-          <div class="pub-index">05</div>
-          <div class="pub-body">
-            <h3>VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges</h3>
-            <p class="authors">Sungjae Choi, <strong>Hanna Bae</strong>, Sunghyun Baek, and Junmo Kim</p>
-            <p class="venue">Manuscript, under review</p>
-            <p class="keywords">Pose graph &middot; Long-sequence reconstruction</p>
-          </div>
-        </li>
-        <li class="pub">
           <div class="pub-index">06</div>
           <div class="pub-body">
             <h3>Data Preprocessing Methods for Improving Korean Table Question Answering</h3>
             <p class="authors"><strong>Hanna Bae</strong>, Sanghyuk Won, Jaehong Lee, Woohyuk Jung, and Jihwan Woo</p>
-            <p class="venue">Journal of Information Systems, 27(2), 71&ndash;87, 2025</p>
+            <p class="venue">Information Systems Review, 27(2), 71&ndash;87, 2025 &middot; First author</p>
             <p class="keywords">Table question answering &middot; Data-centric AI</p>
           </div>
         </li>
       </ol>
+    </section>
+
+    <section id="grants" class="section">
+      <h2 class="section-title">Research Grants</h2>
+      <article class="entry">
+        <div class="entry-date">Sep 2025 &mdash; Aug 2026<span class="place">KRW 12,000,000</span></div>
+        <div class="entry-body">
+          <h3>Master&rsquo;s Student Research Grant, National Research Foundation of Korea</h3>
+          <p class="org">Sole Principal Investigator &middot; RS-2025-25398106</p>
+          <ul class="bullets">
+            <li>SpecFusion: Camera&ndash;Radar 3D Object Detection with Specialized Modality Fusion.</li>
+            <li>Authored the proposal and won the grant through national competitive review. The program funds a single student PI with no co-investigators, so research design, execution, budget, and reporting are all my responsibility.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Mar 2026 &mdash; Present<span class="place">IITP / MSIT</span></div>
+        <div class="entry-body">
+          <h3>AI Technology Utilization Improvement Program</h3>
+          <p class="org">Participating Researcher &middot; RS-2022-II220184</p>
+          <ul class="bullets">
+            <li>Joined as a supporting researcher and now lead the lab task on adaptive AI under evolving ethics policy.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">2026 &mdash; Present<span class="place">NRF</span></div>
+        <div class="entry-body">
+          <h3>Excellent Research Program &mdash; Core Research (Type B)</h3>
+          <p class="org">Participating Researcher &middot; RS-2026-25470670</p>
+          <ul class="bullets">
+            <li>Leading the lab task on feed-forward 4D scene generation with physical-consistency constraints.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Apr &mdash; Jun 2026<span class="place">COMPA / MSIT</span></div>
+        <div class="entry-body">
+          <h3>Advanced Research Equipment Commercialization (Pre-Planning)</h3>
+          <p class="org">Participating Researcher, KAIST subcontract &middot; RS-2026-25536057</p>
+          <ul class="bullets">
+            <li>Delivered the multimodal AI analysis engine for a platform integrating fluorescence imaging and Raman spectroscopy.</li>
+          </ul>
+        </div>
+      </article>
     </section>
 
     <section id="experience" class="section">
@@ -152,7 +204,8 @@
           <h3>AI Research Intern</h3>
           <p class="org">CJ OliveNetworks AI Research Lab</p>
           <ul class="bullets">
-            <li>Built Korean table question-answering data with merged and composite structures, and compared multiple table representations.</li>
+            <li>Built a Korean table QA dataset of 13,200 question&ndash;answer pairs spanning simple, merged, and composite table structures, distilled from 400K AI Hub tables and balanced across six domains.</li>
+            <li>Showed that the optimal table serialization depends on structure &mdash; Numpy for simple, Text for merged, HTML for composite &mdash; lifting average EM/F1 from 43.5/58.1 to 46.5/60.8 over the HTML-only baseline.</li>
             <li>Developed the internship study into a first-author journal publication.</li>
           </ul>
         </div>
@@ -163,7 +216,7 @@
           <h3>Research Intern</h3>
           <p class="org">Autonomous Computing Systems Lab (ACSL), GIST</p>
           <ul class="bullets">
-            <li>Studied mobile and edge 3D reconstruction, dense correspondence, and detector-free feature matching for SLAM front ends.</li>
+            <li>Researched mobile and edge 3D reconstruction, dense correspondence, and detector-free feature matching for SLAM front ends.</li>
             <li>Explored deployment pipelines with TensorRT, ONNX, CoreML, and TinyML, with attention to accuracy&ndash;latency&ndash;memory trade-offs.</li>
           </ul>
         </div>
@@ -173,63 +226,60 @@
     <section id="projects" class="section">
       <h2 class="section-title">Projects</h2>
       <article class="entry">
-        <div class="entry-date">2026<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-date">Sep 2025 &mdash; Aug 2026<span class="place">Daejeon, Korea</span></div>
         <div class="entry-body">
-          <h3>On-Device AI for Raman Spectroscopy</h3>
-          <p class="org">Industry&ndash;academic research project</p>
+          <h3>SpecFusion: Camera&ndash;Radar 3D Object Detection</h3>
+          <p class="org">NRF research grant &middot; Sole principal investigator</p>
           <ul class="bullets">
-            <li>Designed a lightweight pipeline for spectral preprocessing, classification, quality assessment, and out-of-distribution detection under device-level latency constraints.</li>
+            <li>Designing a two-path fusion architecture: BEV early fusion with radar-assisted depth sampling and structure-aware depth enhancement, combined with late fusion over pseudo-depth and geometry priors.</li>
+            <li>Targeting known radar failure modes &mdash; spurious points, key-point missing, and non-positional disturbance &mdash; on nuScenes and View-of-Delft.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Apr &mdash; Jun 2026<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-body">
+          <h3>Fluorescence&ndash;Raman Multimodal AI Analysis Engine</h3>
+          <p class="org">Industry&ndash;academic project &middot; KAIST subcontract</p>
+          <ul class="bullets">
+            <li>Built a three-stage statistical Raman denoising pipeline &mdash; cosmic-ray removal, baseline correction, and Savitzky&ndash;Golay smoothing &mdash; with reference-free baseline estimation for fluorescent substrates.</li>
+            <li>Validated deep-learning fluorescence denoising with SAM-based automatic ROI extraction, quantified domain-mismatch limits, and designed a metadata-conditioned adapter for varying magnification and excitation wavelengths.</li>
           </ul>
         </div>
       </article>
       <article class="entry">
         <div class="entry-date">2025<span class="place">Daejeon, Korea</span></div>
         <div class="entry-body">
-          <h3>Retriever-Free Visual SLAM</h3>
-          <p class="org">Research project</p>
+          <h3>OpenVINS&ndash;MASt3R Hybrid Visual-Inertial SLAM</h3>
+          <p class="org">Team project &middot; HILTI SLAM Challenge</p>
           <ul class="bullets">
-            <li>Combined a MASt3R-SLAM front end with a feed-forward multi-view reconstruction back end through dense matching rather than explicit image retrieval.</li>
-            <li>Studied keyframe selection, stationary-frame handling, loop closure, pose-graph optimization, and yaw drift over long sequences.</li>
+            <li>Diagnosed abrupt pose corruption in static states caused by Z-axis accelerometer noise that MSCKF failed to absorb, then built depth and IMU gating modules for anomaly rejection.</li>
+            <li>Added a Hampel median filter over raw IMU signals; the combined pipeline raised the HILTI score on exp02 from 0 to 0.45 and on exp15 from 6.7 to 22.22.</li>
+            <li>Integrated MASt3R-SLAM global correction with keyframe selection, retrieval-based candidate search, dense-matching verification, and Gauss&ndash;Newton pose-graph optimization.</li>
           </ul>
         </div>
       </article>
       <article class="entry">
-        <div class="entry-date">2025<span class="place">Daejeon, Korea</span></div>
+        <div class="entry-date">Apr 2026 &mdash; Present<span class="place">Daejeon, Korea</span></div>
         <div class="entry-body">
-          <h3>Camera&ndash;Radar Fusion for 3D Object Detection</h3>
-          <p class="org">Research project</p>
+          <h3>Culture-Domain Korean NER &amp; Group-Fairness Dataset</h3>
+          <p class="org">Government-funded research project</p>
           <ul class="bullets">
-            <li>Implemented camera&ndash;radar feature fusion with teacher&ndash;student distillation, and investigated radar augmentation drift, cross-modal alignment, and illumination robustness.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry-date">2025<span class="place">Daejeon, Korea</span></div>
-        <div class="entry-body">
-          <h3>OpenVINS&ndash;MASt3R Hybrid Visual SLAM</h3>
-          <p class="org">Team project</p>
-          <ul class="bullets">
-            <li>Analyzed visual-inertial odometry under noisy IMU and depth-derived pose corruption, and explored anomaly rejection and Hampel filtering for stable estimation.</li>
+            <li>Constructed a culture-domain Korean NER dataset from scratch &mdash; 5,191 sentences and 20,384 entities &mdash; labeled into the KLUE 6-type schema, with lossless format conversion and document-level leakage prevention in the split.</li>
+            <li>Raised entity F1 on the culture test set from 0.725 to 0.888 through domain-adaptive retraining while retaining performance on KLUE.</li>
+            <li>Annotated group attributes across the corpus so that per-group performance gaps can be measured, establishing the basis for fairness-gap reduction work.</li>
           </ul>
         </div>
       </article>
       <article class="entry">
         <div class="entry-date">2024<span class="place">Gwangju, Korea</span></div>
         <div class="entry-body">
-          <h3>Detector-Free Feature Matching for SLAM Front-End</h3>
+          <h3>SegMatching: Semantic Filtering for Detector-Free Feature Matching</h3>
           <p class="org">B.S. thesis</p>
           <ul class="bullets">
-            <li>Studied detector-free local feature matching and semantic filtering for visual SLAM, evaluated on MegaDepth.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry-date">2023 &mdash; 2024<span class="place">Gwangju, Korea</span></div>
-        <div class="entry-body">
-          <h3>Additional Machine Learning Projects</h3>
-          <p class="org">Course and independent projects</p>
-          <ul class="bullets">
-            <li>Built sleep-stage classification, Korean text classification, profanity filtering, and an object-detection demo deployed with Streamlit.</li>
+            <li>Found through qualitative analysis of TopicFM that dense correspondences concentrate on regions unreliable for pose estimation &mdash; sky, foliage, and people.</li>
+            <li>Proposed a post-matching filter using ADE20K semantic segmentation masks with per-class stability priors, improving AUC@5&deg; and AUC@10&deg; on MegaDepth-1500 over TopicFM.</li>
+            <li>Documented the trade-offs: AUC@20&deg; fell slightly from the reduced correspondence count, alongside the added segmentation cost and an outdoor-biased design.</li>
           </ul>
         </div>
       </article>
@@ -244,6 +294,7 @@
           <p class="org">Korea Advanced Institute of Science and Technology</p>
           <ul class="bullets">
             <li>Statistical Inference &amp; Information Theory Laboratory, advised by Prof. Junmo Kim.</li>
+            <li>Coursework: 3D Vision; Computer Vision; Mobile Robotics &amp; Autonomous Driving; Computational Image Generation &amp; Editing; Convex Optimization; Machine Learning; Stochastic Processes.</li>
           </ul>
         </div>
       </article>
@@ -301,9 +352,13 @@
         <dt>Programming</dt>
         <dd>Python (PyTorch, NumPy, pandas, OpenCV), C++</dd>
         <dt>3D Vision</dt>
-        <dd>3D reconstruction, visual SLAM, multi-view geometry, pose estimation, dense correspondence, trajectory evaluation</dd>
+        <dd>3D reconstruction, visual SLAM, multi-view geometry, pose estimation, dense correspondence, trajectory evaluation, 3D Gaussian splatting</dd>
+        <dt>Deployment</dt>
+        <dd>TensorRT, ONNX, CoreML, TinyML, model quantization and pruning, latency&ndash;memory profiling</dd>
         <dt>Systems</dt>
-        <dd>Linux, Git, Docker / Conda, TensorRT, ONNX, CoreML, LaTeX</dd>
+        <dd>Linux, Git, Docker / Conda, LaTeX</dd>
+        <dt>Language</dt>
+        <dd>Korean (native), English &mdash; TOEIC Speaking Intermediate High</dd>
       </dl>
     </section>
 
@@ -314,6 +369,6 @@
   </main>
 </div>
 
-<script src="script.js?v=3"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>
