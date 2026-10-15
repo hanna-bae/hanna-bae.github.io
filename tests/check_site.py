@@ -93,7 +93,7 @@ class HomepageTests(unittest.TestCase):
         self.assertLess(self.html.index('href="#education"'), self.html.index('href="#publications"'))
         self.assertNotIn('Coursework:', self.html)
         self.assertNotIn('Laboratory, advised by Prof. Junmo Kim.', self.html)
-        self.assertIn('I study geometric consistency in long-sequence 3D reconstruction.', self.html)
+        self.assertNotIn('I study geometric consistency in long-sequence 3D reconstruction.', self.html)
 
     def test_requested_layout(self):
         self.assertIn('<aside class="profile"', self.html)
@@ -103,7 +103,10 @@ class HomepageTests(unittest.TestCase):
         self.assertNotIn('class="keywords"', self.html)
         self.assertNotIn('class="pub-year"', self.html)
         bio = self.html.split('<div class="bio">')[1].split('</div>')[0]
-        self.assertLess(len(bio.split()), 65)
+        self.assertLess(len(bio.split()), 105)
+        self.assertIn('particularly 3D reconstruction and robot vision.', bio)
+        self.assertIn('from GIST, with minors in Mathematics and Artificial Intelligence.', bio)
+        self.assertIn('https://scholar.google.com/citations?hl=ko&user=GdQtWNQAAAAJ', {link.get('href') for link in self.site.links})
 
     def test_images_and_local_assets(self):
         for image in self.site.images:
