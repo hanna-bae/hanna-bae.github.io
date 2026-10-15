@@ -112,6 +112,8 @@ class HomepageTests(unittest.TestCase):
         self.assertIn('type="image/png" href="assets/ggyu-avatar.png?v=1"', self.html)
         self.assertIn('src="assets/profile.jpg"', self.html)
         self.assertIn('.profile > .portrait { align-self:center; }', (ROOT / 'style.css').read_text())
+        self.assertIn('.profile .contact { justify-content:center; border-top:1px solid var(--panel-line);', (ROOT / 'style.css').read_text())
+        self.assertIn('.profile .tags { justify-content:center; }', (ROOT / 'style.css').read_text())
 
     def test_images_and_local_assets(self):
         for image in self.site.images:

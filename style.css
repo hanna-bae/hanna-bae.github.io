@@ -103,3 +103,10 @@ body { height:100vh; height:100dvh; overflow:hidden; background:#fafbfd; }
  .profile-copy { width:100%; }
  .profile-copy > h1, .profile-copy > .role, .profile-copy > .lab { text-align:center; }
 }
+
+/* Keep profile contacts and research interests balanced beneath the identity. */
+.profile-copy { text-align:center; }
+.profile .contact { justify-content:center; border-top:1px solid var(--panel-line); padding-top:18px; margin-top:22px; gap:10px 14px; }
+.profile .contact .email { flex-basis:100%; }
+.profile .contact li:not(.email) a { display:inline-block; padding:5px 12px; border:1px solid var(--panel-line); border-radius:6px; background:#fafcfe; }
+.profile .tags { justify-content:center; }
