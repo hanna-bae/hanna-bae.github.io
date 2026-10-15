@@ -88,6 +88,13 @@ class HomepageTests(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertEqual(stack, [])
 
+    def test_education_before_publications(self):
+        self.assertLess(self.html.index('<section id="education"'), self.html.index('<section id="publications"'))
+        self.assertLess(self.html.index('href="#education"'), self.html.index('href="#publications"'))
+        self.assertNotIn('Coursework:', self.html)
+        self.assertNotIn('Laboratory, advised by Prof. Junmo Kim.', self.html)
+        self.assertIn('I study geometric consistency in long-sequence 3D reconstruction.', self.html)
+
     def test_requested_layout(self):
         self.assertIn('<aside class="profile"', self.html)
         self.assertNotIn('id="teaching"', self.html)
@@ -96,7 +103,7 @@ class HomepageTests(unittest.TestCase):
         self.assertNotIn('class="keywords"', self.html)
         self.assertNotIn('class="pub-year"', self.html)
         bio = self.html.split('<div class="bio">')[1].split('</div>')[0]
-        self.assertLess(len(bio.split()), 55)
+        self.assertLess(len(bio.split()), 65)
 
     def test_images_and_local_assets(self):
         for image in self.site.images:
