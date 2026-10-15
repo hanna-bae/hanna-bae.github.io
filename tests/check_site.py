@@ -74,6 +74,20 @@ class HomepageTests(unittest.TestCase):
         for keyword in ['3D Reconstruction', 'Multi-View Geometry', 'Visual SLAM', 'Sensor Fusion', 'Autonomous Driving']:
             self.assertIn('<li>' + keyword + '</li>', self.html)
 
+    def test_strict_html_nesting(self):
+        stack, errors = [], []
+        void = {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
+        class NestingParser(HTMLParser):
+            def handle_starttag(self, tag, attrs):
+                if tag not in void: stack.append(tag)
+            def handle_endtag(self, tag):
+                if tag in void: return
+                if not stack or stack[-1] != tag: errors.append((tag, list(stack)))
+                elif stack: stack.pop()
+        NestingParser().feed(self.html)
+        self.assertEqual(errors, [])
+        self.assertEqual(stack, [])
+
     def test_requested_layout(self):
         self.assertIn('<aside class="profile"', self.html)
         self.assertNotIn('id="teaching"', self.html)
