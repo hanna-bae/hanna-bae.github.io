@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=9" />
+<link rel="stylesheet" href="style.css?v=10" />
 </head>
 <body>
 
@@ -37,20 +37,27 @@
 
 <div class="shell layout" id="top">
 
-  <main class="content" id="main" tabindex="-1">
-    <header class="profile" id="about" aria-labelledby="profile-name">
-      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Hanna Bae" width="800" height="800" />
-      <div class="profile-copy">
-        <h1 id="profile-name">Hanna Bae</h1>
-        <p class="role">M.S. Student · KAIST Electrical Engineering</p>
-        <div class="bio"><p>I work on reliable 3D reconstruction and geometric perception. At KAIST, I am advised by Prof. Junmo Kim in the <a href="https://siit.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">Statistical Inference &amp; Information Theory Lab</a>.</p></div>
-        <ul class="contact" aria-label="Contact and profile links">
-          <li><a href="mailto:hannabae@kaist.ac.kr">Email</a></li>
-          <li><a href="https://github.com/hanna-bae" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="assets/CV_Hanna_Bae.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-        </ul>
-      </div>
-    </header>
+  <aside class="profile" aria-labelledby="profile-name">
+    <img class="portrait" src="assets/profile.jpg" alt="Portrait of Hanna Bae" width="800" height="800" />
+    <div class="profile-copy">
+      <h1 id="profile-name">Hanna Bae</h1>
+      <p class="role">M.S. Student<br /> KAIST Electrical Engineering</p>
+      <p class="lab">Statistical Inference &amp;<br /> Information Theory Lab</p>
+      <ul class="contact" aria-label="Contact and profile links">
+        <li class="email"><a href="mailto:hannabae@kaist.ac.kr">hannabae@kaist.ac.kr</a></li>
+        <li><a href="https://github.com/hanna-bae" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="assets/CV_Hanna_Bae.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+      </ul>
+      <h2 class="keyword-label">Research interests</h2>
+      <ul class="tags" aria-label="Research interests">
+        <li>3D Reconstruction</li><li>Multi-View Geometry</li><li>Visual SLAM</li><li>Sensor Fusion</li><li>Autonomous Driving</li>
+      </ul>
+    </div>
+  </aside>
+  <main class="content" id="main" tabindex="0" aria-label="Research portfolio — scroll to explore">
+    <section id="about" class="section first" aria-label="About">
+      <div class="bio"><p>I work on reliable 3D reconstruction and geometric perception. At KAIST, I am advised by Prof. Junmo Kim in the <a href="https://siit.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">Statistical Inference &amp; Information Theory Lab</a>.</p></div>
+    </section>
 
     <section id="publications" class="section" aria-labelledby="publications-title">
       <div class="section-heading">
@@ -64,7 +71,7 @@
             <h4><a href="https://arxiv.org/abs/2610.06594" target="_blank" rel="noopener noreferrer">VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges</a></h4>
             <p class="authors">Sungjae Choi<sup>*</sup>, <strong>Hanna Bae<sup>*</sup></strong>, Sunghyun Baek, and Junmo Kim</p>
             <p class="contribution-note">* Equal contribution</p>
-            <div class="publication-footer"><p class="venue">ACCV 2026 · Accepted</p><div class="pub-links"><a href="https://arxiv.org/abs/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="arXiv for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">arXiv <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/pdf/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="PDF for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">PDF <span aria-hidden="true">&#8599;</span></a></div></div>
+            <div class="publication-footer"><p class="venue">ACCV 2026 · Accepted</p><div class="pub-links"><a href="https://arxiv.org/abs/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="arXiv for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">arXiv <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/pdf/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="PDF for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">PDF <span aria-hidden="true">&#8599;</span></a><a href="https://github.com/BeCow5X5/VGGT-Bridge" target="_blank" rel="noopener noreferrer" aria-label="Code for VGGT-Bridge">Code <span aria-hidden="true">&#8599;</span></a></div></div>
           </div>
         </li>
         <li class="pub" id="table-qa">
@@ -253,7 +260,7 @@
   </main>
 </div>
 
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>
 

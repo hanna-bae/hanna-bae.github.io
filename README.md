@@ -35,6 +35,6 @@ The CV is an existing public asset. Review its contents separately before replac
 
 ## Layout revision
 
-A centered, laptop-first layout uses a compact horizontal profile, followed immediately by publications. Names, author credits and public facts are retained. Teaching remains removed. Publication titles lead plain rows; venue and resource links share a compact line.
+On desktop the bordered profile panel stays in place while the research portfolio panel scrolls independently. Navigation anchors and active-section state follow the portfolio panel. Tab to the portfolio to scroll it with the keyboard. At widths of 820px and below, both panels use normal page flow.
 
-Reference pages informed visual hierarchy only; their code and artwork were not copied: https://minseo-kimm.github.io/, https://becow5x5.github.io/ and https://segyulee.github.io/.
+The existing blue palette, verified publication metadata, and equal-contribution credits are retained. Research interests are restored. Reference pages informed visual hierarchy only; code and artwork were not copied: https://minseo-kimm.github.io/, https://becow5x5.github.io/ and https://segyulee.github.io/.

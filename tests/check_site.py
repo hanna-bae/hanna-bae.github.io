@@ -64,11 +64,21 @@ class HomepageTests(unittest.TestCase):
         self.assertEqual(paper.count('<sup>*</sup>'), 2)
         self.assertIn('* Equal contribution', paper)
 
+    def test_independent_scroll_and_keywords(self):
+        css = (ROOT / 'style.css').read_text()
+        js = (ROOT / 'script.js').read_text()
+        self.assertIn('tabindex="0"', self.html)
+        self.assertIn("pane?.addEventListener('scroll'", js)
+        self.assertIn('overscroll-behavior-y:contain', css)
+        self.assertIn('@media(max-width:820px)', css)
+        for keyword in ['3D Reconstruction', 'Multi-View Geometry', 'Visual SLAM', 'Sensor Fusion', 'Autonomous Driving']:
+            self.assertIn('<li>' + keyword + '</li>', self.html)
+
     def test_requested_layout(self):
-        self.assertIn('<header class="profile" id="about"', self.html)
+        self.assertIn('<aside class="profile"', self.html)
         self.assertNotIn('id="teaching"', self.html)
         self.assertNotIn('href="#teaching"', self.html)
-        self.assertNotIn('class="tags"', self.html)
+        self.assertIn('class="tags"', self.html)
         self.assertNotIn('class="keywords"', self.html)
         self.assertNotIn('class="pub-year"', self.html)
         bio = self.html.split('<div class="bio">')[1].split('</div>')[0]
@@ -95,7 +105,7 @@ class HomepageTests(unittest.TestCase):
         urls = {link.get('href') for link in self.site.links}
         for url in ('https://arxiv.org/abs/2610.06594', 'https://arxiv.org/pdf/2610.06594',
                     'https://arxiv.org/abs/2609.21938', 'https://arxiv.org/pdf/2609.21938',
-                    'https://doi.org/10.14329/isr.2025.27.2.071'):
+                    'https://doi.org/10.14329/isr.2025.27.2.071', 'https://github.com/BeCow5X5/VGGT-Bridge'):
             self.assertIn(url, urls)
         self.assertIn('Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction', self.site.titles)
         self.assertIn('Sang-Huck Won, Jae-Hong Lee, Woo-Hyuk Jung, and Jihwan Woo', self.html)
