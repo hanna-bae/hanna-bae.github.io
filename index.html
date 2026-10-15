@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hanna Bae</title>
 <meta name="description" content="Hanna Bae is an M.S. student at KAIST Electrical Engineering researching 3D vision, geometric perception, 3D reconstruction, visual SLAM, and multi-view geometry." />
-<meta name="theme-color" content="#f6f7f9" />
+<meta name="theme-color" content="#ffffff" />
 <meta property="og:title" content="Hanna Bae" />
 <meta property="og:description" content="M.S. student at KAIST EE. 3D vision, geometric perception, 3D reconstruction, and visual SLAM." />
 <meta property="og:type" content="website" />
@@ -15,11 +15,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=6" />
+<link rel="stylesheet" href="style.css?v=8" />
 </head>
 <body>
 
-<a class="skip-link" href="#about">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="topbar">
   <div class="shell topbar-inner">
@@ -27,10 +27,9 @@
     <nav class="nav" aria-label="Section navigation">
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="#education">Education</a>
-      <a href="#teaching">Teaching</a>
       <a href="#skills">Skills</a>
     </nav>
   </div>
@@ -42,100 +41,88 @@
   <aside class="profile">
     <div class="profile-inner">
       <img class="portrait" src="assets/profile.jpg" alt="Portrait of Hanna Bae" width="800" height="800" />
+      <div class="profile-summary">
       <h1>Hanna Bae</h1>
       <p class="role">M.S. Student<br />KAIST Electrical Engineering</p>
       <p class="lab">Statistical Inference &amp;<br />Information Theory Lab</p>
+      </div>
 
       <ul class="contact">
         <li><span>Email</span><a href="mailto:hannabae@kaist.ac.kr">hannabae@kaist.ac.kr</a></li>
-        <li><span>GitHub</span><a href="https://github.com/hanna-bae" target="_blank" rel="noopener">hanna-bae</a></li>
-        <li><span>CV</span><a href="assets/CV_Hanna_Bae.pdf" target="_blank" rel="noopener">PDF</a></li>
+        <li><span>GitHub</span><a href="https://github.com/hanna-bae" target="_blank" rel="noopener noreferrer">hanna-bae</a></li>
+        <li><span>CV</span><a href="assets/CV_Hanna_Bae.pdf" target="_blank" rel="noopener noreferrer">PDF</a></li>
       </ul>
     </div>
   </aside>
 
   <!-- ============ RIGHT: CONTENT ============ -->
-  <main class="content">
+  <main class="content" id="main" tabindex="-1">
 
-    <section id="about" class="section first">
-      <div class="bio">
-        <p class="lede">
-          I am an M.S. student in the School of Electrical Engineering at KAIST, in the
-          <a href="https://siit.kaist.ac.kr/" target="_blank" rel="noopener">Statistical Inference &amp; Information Theory Lab</a>
-          under Prof. Junmo Kim. I work on 3D vision and geometric perception, asking how feed-forward
-          reconstruction models hold up on long, real-world sequences &mdash; where their geometry drifts,
-          why, and what can be corrected without another forward pass. I am also the principal investigator
-          of an NRF grant on camera&ndash;radar 3D object detection, which carries the same questions about
-          geometry and reliability into sensor fusion.
-        </p>
-      </div>
-      <ul class="tags" aria-label="Research interests">
-        <li>3D Reconstruction</li>
-        <li>Visual SLAM</li>
-        <li>Multi-View Geometry</li>
-        <li>Sensor Fusion</li>
-        <li>Autonomous Driving</li>
-      </ul>
+    <section id="about" class="section first" aria-label="About">
+      <div class="bio"><p>I am an M.S. student at KAIST, advised by Prof. Junmo Kim in the <a href="https://siit.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">Statistical Inference &amp; Information Theory Lab</a>. My research focuses on reliable 3D reconstruction and geometric perception.</p></div>
     </section>
 
-    <section id="publications" class="section">
-      <h2 class="section-title">Publications</h2>
-      <ol class="pubs">
-        <li class="pub">
-          <div class="pub-index">01</div>
+    <section id="publications" class="section" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <h2 class="section-title" id="publications-title">Publications</h2>
+        <a class="section-jump" href="#under-review">Under review <span aria-hidden="true">&#8595;</span></a>
+      </div>
+      <div class="publication-group" aria-labelledby="accepted-title">
+        <h3 class="group-title" id="accepted-title">Accepted &amp; Published</h3>
+        <ol class="pubs">
+        <li class="pub" id="vggt-bridge">
           <div class="pub-body">
-            <h3>Position Matters in the Overlap: Analyzing Chunk Alignment for Long-Sequence 3D Reconstruction</h3>
+            <h4><a href="https://arxiv.org/abs/2610.06594" target="_blank" rel="noopener noreferrer">VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges</a></h4>
+            <p class="authors">Sungjae Choi<sup>*</sup>, <strong>Hanna Bae<sup>*</sup></strong>, Sunghyun Baek, and Junmo Kim</p>
+            <p class="contribution-note">* Equal contribution</p>
+            <p class="venue">ACCV 2026 · Accepted</p>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="arXiv for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">arXiv <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/pdf/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="PDF for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">PDF <span aria-hidden="true">&#8599;</span></a></div>
+          </div>
+        </li>
+        <li class="pub" id="table-qa">
+          <div class="pub-body">
+            <h4><a href="https://doi.org/10.14329/isr.2025.27.2.071" target="_blank" rel="noopener noreferrer">Analyzing the Effects of Table Preprocessing Methods on Korean Question-Answering Performance</a></h4>
+            <p class="authors"><strong>Hanna Bae</strong>, Sang-Huck Won, Jae-Hong Lee, Woo-Hyuk Jung, and Jihwan Woo</p>
+            <p class="venue">Information Systems Review, 27(2), 71&ndash;87, 2025 · Published <span class="author-note">First author</span></p>
+            <div class="pub-links"><a href="https://doi.org/10.14329/isr.2025.27.2.071" target="_blank" rel="noopener noreferrer" aria-label="DOI for Analyzing the Effects of Table Preprocessing Methods on Korean Question-Answering Performance">DOI <span aria-hidden="true">&#8599;</span></a><a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003208010" target="_blank" rel="noopener noreferrer" aria-label="Journal for Analyzing the Effects of Table Preprocessing Methods on Korean Question-Answering Performance">Journal <span aria-hidden="true">&#8599;</span></a></div>
+          </div>
+        </li>
+        </ol>
+      </div>
+      <div class="publication-group" id="under-review" aria-labelledby="under-review-title">
+        <h3 class="group-title" id="under-review-title">Preprints &amp; Under Review</h3>
+        <ol class="pubs">
+        <li class="pub" id="position-matters">
+          <div class="pub-body">
+            <h4>Position Matters in the Overlap: Analyzing Chunk Alignment for Long-Sequence 3D Reconstruction</h4>
             <p class="authors"><strong>Hanna Bae</strong>, Sojeong Song, Gyojin Han, Sungjae Choi, and Junmo Kim</p>
-            <p class="venue">Manuscript, under review &middot; First author</p>
-            <p class="keywords">Long-sequence reconstruction &middot; Chunk alignment</p>
+            <p class="venue">Manuscript · Under review <span class="author-note">First author</span></p>
           </div>
         </li>
-        <li class="pub">
-          <div class="pub-index">02</div>
+        <li class="pub" id="dense-risk">
           <div class="pub-body">
-            <h3>VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges</h3>
-            <p class="authors">Sungjae Choi, <strong>Hanna Bae</strong>, Sunghyun Baek, and Junmo Kim </p>
-            <p class="venue">ACCV 2026</p>
-            <p class="keywords">Pose graph &middot; Long-sequence reconstruction</p>
-          </div>
-        </li>
-        <li class="pub">
-          <div class="pub-index">03</div>
-          <div class="pub-body">
-            <h3>Adaptive Dense Risk Prediction for Consistent Feed-Forward 3D Reconstruction</h3>
+            <h4>Adaptive Dense Risk Prediction for Consistent Feed-Forward 3D Reconstruction</h4>
             <p class="authors">Sojeong Song, <strong>Hanna Bae</strong>, Chang D. Yoo, and Junmo Kim</p>
-            <p class="venue">Manuscript, under review</p>
-            <p class="keywords">3D reconstruction &middot; Risk prediction</p>
+            <p class="venue">Manuscript · Under review</p>
           </div>
         </li>
-        <li class="pub">
-          <div class="pub-index">04</div>
+        <li class="pub" id="info3r">
           <div class="pub-body">
-            <h3>Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction</h3>
+            <h4><a href="https://arxiv.org/abs/2609.21938" target="_blank" rel="noopener noreferrer">Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction</a></h4>
             <p class="authors">Sunghyun Baek, <strong>Hanna Bae</strong>, Minchan Kwon, and Junmo Kim</p>
-            <p class="venue">Manuscript, under review</p>
-            <p class="keywords">Continuous reconstruction &middot; Test-time adaptation</p>
+            <p class="venue">arXiv preprint, 2026 · Under review</p>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2609.21938" target="_blank" rel="noopener noreferrer" aria-label="arXiv for Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction">arXiv <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/pdf/2609.21938" target="_blank" rel="noopener noreferrer" aria-label="PDF for Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction">PDF <span aria-hidden="true">&#8599;</span></a></div>
           </div>
         </li>
-        <li class="pub">
-          <div class="pub-index">05</div>
+        <li class="pub" id="vistags">
           <div class="pub-body">
-            <h3>VistaGS: Multi-View Geometry Foundation Priors for View-Consistent Few-Shot 3D Gaussian Splatting</h3>
+            <h4>VistaGS: Multi-View Geometry Foundation Priors for View-Consistent Few-Shot 3D Gaussian Splatting</h4>
             <p class="authors">Sungjae Choi, Gyojin Han, <strong>Hanna Bae</strong>, and Junmo Kim</p>
-            <p class="venue">Manuscript, under review</p>
-            <p class="keywords">Gaussian splatting &middot; Few-shot novel view synthesis</p>
+            <p class="venue">Manuscript · Under review</p>
           </div>
         </li>
-        <li class="pub">
-          <div class="pub-index">06</div>
-          <div class="pub-body">
-            <h3>Data Preprocessing Methods for Improving Korean Table Question Answering</h3>
-            <p class="authors"><strong>Hanna Bae</strong>, Sanghyuk Won, Jaehong Lee, Woohyuk Jung, and Jihwan Woo</p>
-            <p class="venue">Information Systems Review, 27(2), 71&ndash;87, 2025 &middot; First author</p>
-            <p class="keywords">Table question answering &middot; Data-centric AI</p>
-          </div>
-        </li>
-      </ol>
+        </ol>
+      </div>
     </section>
 
     <section id="projects" class="section">
@@ -257,32 +244,7 @@
       </article>
     </section>
 
-    <section id="teaching" class="section">
-      <h2 class="section-title">Teaching</h2>
-      <article class="entry">
-        <div class="entry-date">Spring 2023, Fall 2024</div>
-        <div class="entry-body">
-          <h3>Teaching Assistant, Differential Equations</h3>
-          <p class="org">GIST</p>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry-date">Spring 2024</div>
-        <div class="entry-body">
-          <h3>Teaching Assistant, Computer System Theory and Experiments</h3>
-          <p class="org">GIST</p>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry-date">Fall 2023</div>
-        <div class="entry-body">
-          <h3>Teaching Assistant, Computer Programming</h3>
-          <p class="org">GIST</p>
-        </div>
-      </article>
-    </section>
-
-    <section id="skills" class="section">
+<section id="skills" class="section">
       <h2 class="section-title">Skills</h2>
       <dl class="skills">
         <dt>Programming</dt>
@@ -299,12 +261,13 @@
     </section>
 
     <footer class="footer">
-      <p>Last updated September 2026. &copy; <span id="year"></span> Hanna Bae.</p>
+      <p>Last updated October 2026. &copy; <span id="year">2026</span> Hanna Bae.</p>
     </footer>
 
   </main>
 </div>
 
-<script src="script.js?v=4"></script>
+<script src="script.js?v=5"></script>
 </body>
 </html>
+
