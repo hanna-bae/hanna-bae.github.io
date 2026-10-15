@@ -115,6 +115,7 @@ class HomepageTests(unittest.TestCase):
         for link in self.site.links:
             href = link.get('href', '')
             if href.startswith('assets/'):
+                href = href.split('?')[0]
                 self.assertTrue((ROOT / href).is_file())
 
     def test_accepted_work_is_first(self):
