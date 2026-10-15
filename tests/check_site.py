@@ -108,6 +108,11 @@ class HomepageTests(unittest.TestCase):
         self.assertIn('from GIST, with minors in Mathematics and Artificial Intelligence.', bio)
         self.assertIn('https://scholar.google.com/citations?hl=ko&user=GdQtWNQAAAAJ', {link.get('href') for link in self.site.links})
 
+    def test_profile_identity_and_avatar(self):
+        self.assertIn('type="image/png" href="assets/ggyu-avatar.png?v=1"', self.html)
+        self.assertIn('src="assets/profile.jpg"', self.html)
+        self.assertIn('.profile > .portrait { align-self:center; }', (ROOT / 'style.css').read_text())
+
     def test_images_and_local_assets(self):
         for image in self.site.images:
             self.assertTrue(image.get('alt'))

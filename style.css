@@ -96,3 +96,10 @@ body { height:100vh; height:100dvh; overflow:hidden; background:#fafbfd; }
 @media(max-width:480px) { .shell { padding-left:14px; padding-right:14px; }.profile { grid-template-columns:72px minmax(0,1fr); gap:16px; padding:18px; }.portrait { width:72px; height:88px; }.profile h1 { font-size:26px; }.profile .role { font-size:12px; }.lab { font-size:11px; }.tags li { font-size:9px; }.content { padding:22px 18px; }.pub-body h4 { font-size:16px; }.authors { font-size:12px; } }
 @media(prefers-reduced-motion:reduce) { .content { scroll-behavior:auto; } }
 @media print { body { height:auto; overflow:visible; background:white; }.layout { display:block; height:auto; }.profile,.content { border:0; overflow:visible; }.profile { display:none; } }
+
+/* Center only the desktop profile identity shown in the requested crop. */
+@media(min-width:821px) {
+ .profile > .portrait { align-self:center; }
+ .profile-copy { width:100%; }
+ .profile-copy > h1, .profile-copy > .role, .profile-copy > .lab { text-align:center; }
+}
