@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=8" />
+<link rel="stylesheet" href="style.css?v=9" />
 </head>
 <body>
 
@@ -37,35 +37,24 @@
 
 <div class="shell layout" id="top">
 
-  <!-- ============ LEFT: PROFILE ============ -->
-  <aside class="profile">
-    <div class="profile-inner">
-      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Hanna Bae" width="800" height="800" />
-      <div class="profile-summary">
-      <h1>Hanna Bae</h1>
-      <p class="role">M.S. Student<br />KAIST Electrical Engineering</p>
-      <p class="lab">Statistical Inference &amp;<br />Information Theory Lab</p>
-      </div>
-
-      <ul class="contact">
-        <li><span>Email</span><a href="mailto:hannabae@kaist.ac.kr">hannabae@kaist.ac.kr</a></li>
-        <li><span>GitHub</span><a href="https://github.com/hanna-bae" target="_blank" rel="noopener noreferrer">hanna-bae</a></li>
-        <li><span>CV</span><a href="assets/CV_Hanna_Bae.pdf" target="_blank" rel="noopener noreferrer">PDF</a></li>
-      </ul>
-    </div>
-  </aside>
-
-  <!-- ============ RIGHT: CONTENT ============ -->
   <main class="content" id="main" tabindex="-1">
-
-    <section id="about" class="section first" aria-label="About">
-      <div class="bio"><p>I am an M.S. student at KAIST, advised by Prof. Junmo Kim in the <a href="https://siit.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">Statistical Inference &amp; Information Theory Lab</a>. My research focuses on reliable 3D reconstruction and geometric perception.</p></div>
-    </section>
+    <header class="profile" id="about" aria-labelledby="profile-name">
+      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Hanna Bae" width="800" height="800" />
+      <div class="profile-copy">
+        <h1 id="profile-name">Hanna Bae</h1>
+        <p class="role">M.S. Student · KAIST Electrical Engineering</p>
+        <div class="bio"><p>I work on reliable 3D reconstruction and geometric perception. At KAIST, I am advised by Prof. Junmo Kim in the <a href="https://siit.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">Statistical Inference &amp; Information Theory Lab</a>.</p></div>
+        <ul class="contact" aria-label="Contact and profile links">
+          <li><a href="mailto:hannabae@kaist.ac.kr">Email</a></li>
+          <li><a href="https://github.com/hanna-bae" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="assets/CV_Hanna_Bae.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+        </ul>
+      </div>
+    </header>
 
     <section id="publications" class="section" aria-labelledby="publications-title">
       <div class="section-heading">
         <h2 class="section-title" id="publications-title">Publications</h2>
-        <a class="section-jump" href="#under-review">Under review <span aria-hidden="true">&#8595;</span></a>
       </div>
       <div class="publication-group" aria-labelledby="accepted-title">
         <h3 class="group-title" id="accepted-title">Accepted &amp; Published</h3>
@@ -75,16 +64,14 @@
             <h4><a href="https://arxiv.org/abs/2610.06594" target="_blank" rel="noopener noreferrer">VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges</a></h4>
             <p class="authors">Sungjae Choi<sup>*</sup>, <strong>Hanna Bae<sup>*</sup></strong>, Sunghyun Baek, and Junmo Kim</p>
             <p class="contribution-note">* Equal contribution</p>
-            <p class="venue">ACCV 2026 · Accepted</p>
-            <div class="pub-links"><a href="https://arxiv.org/abs/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="arXiv for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">arXiv <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/pdf/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="PDF for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">PDF <span aria-hidden="true">&#8599;</span></a></div>
+            <div class="publication-footer"><p class="venue">ACCV 2026 · Accepted</p><div class="pub-links"><a href="https://arxiv.org/abs/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="arXiv for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">arXiv <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/pdf/2610.06594" target="_blank" rel="noopener noreferrer" aria-label="PDF for VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges">PDF <span aria-hidden="true">&#8599;</span></a></div></div>
           </div>
         </li>
         <li class="pub" id="table-qa">
           <div class="pub-body">
             <h4><a href="https://doi.org/10.14329/isr.2025.27.2.071" target="_blank" rel="noopener noreferrer">Analyzing the Effects of Table Preprocessing Methods on Korean Question-Answering Performance</a></h4>
             <p class="authors"><strong>Hanna Bae</strong>, Sang-Huck Won, Jae-Hong Lee, Woo-Hyuk Jung, and Jihwan Woo</p>
-            <p class="venue">Information Systems Review, 27(2), 71&ndash;87, 2025 · Published <span class="author-note">First author</span></p>
-            <div class="pub-links"><a href="https://doi.org/10.14329/isr.2025.27.2.071" target="_blank" rel="noopener noreferrer" aria-label="DOI for Analyzing the Effects of Table Preprocessing Methods on Korean Question-Answering Performance">DOI <span aria-hidden="true">&#8599;</span></a><a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003208010" target="_blank" rel="noopener noreferrer" aria-label="Journal for Analyzing the Effects of Table Preprocessing Methods on Korean Question-Answering Performance">Journal <span aria-hidden="true">&#8599;</span></a></div>
+            <div class="publication-footer"><p class="venue">Information Systems Review, 27(2), 71&ndash;87, 2025 · Published <span class="author-note">First author</span></p><div class="pub-links"><a href="https://doi.org/10.14329/isr.2025.27.2.071" target="_blank" rel="noopener noreferrer" aria-label="DOI for Analyzing the Effects of Table Preprocessing Methods on Korean Question-Answering Performance">DOI <span aria-hidden="true">&#8599;</span></a><a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003208010" target="_blank" rel="noopener noreferrer" aria-label="Journal for Analyzing the Effects of Table Preprocessing Methods on Korean Question-Answering Performance">Journal <span aria-hidden="true">&#8599;</span></a></div></div>
           </div>
         </li>
         </ol>
@@ -96,7 +83,7 @@
           <div class="pub-body">
             <h4>Position Matters in the Overlap: Analyzing Chunk Alignment for Long-Sequence 3D Reconstruction</h4>
             <p class="authors"><strong>Hanna Bae</strong>, Sojeong Song, Gyojin Han, Sungjae Choi, and Junmo Kim</p>
-            <p class="venue">Manuscript · Under review <span class="author-note">First author</span></p>
+            <div class="publication-footer"><p class="venue">Manuscript · Under review <span class="author-note">First author</span></p>
           </div>
         </li>
         <li class="pub" id="dense-risk">
@@ -110,8 +97,7 @@
           <div class="pub-body">
             <h4><a href="https://arxiv.org/abs/2609.21938" target="_blank" rel="noopener noreferrer">Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction</a></h4>
             <p class="authors">Sunghyun Baek, <strong>Hanna Bae</strong>, Minchan Kwon, and Junmo Kim</p>
-            <p class="venue">arXiv preprint, 2026 · Under review</p>
-            <div class="pub-links"><a href="https://arxiv.org/abs/2609.21938" target="_blank" rel="noopener noreferrer" aria-label="arXiv for Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction">arXiv <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/pdf/2609.21938" target="_blank" rel="noopener noreferrer" aria-label="PDF for Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction">PDF <span aria-hidden="true">&#8599;</span></a></div>
+            <p class="venue">arXiv preprint, 2026 · Under review</p><div class="pub-links"><a href="https://arxiv.org/abs/2609.21938" target="_blank" rel="noopener noreferrer" aria-label="arXiv for Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction">arXiv <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/pdf/2609.21938" target="_blank" rel="noopener noreferrer" aria-label="PDF for Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction">PDF <span aria-hidden="true">&#8599;</span></a></div></div>
           </div>
         </li>
         <li class="pub" id="vistags">

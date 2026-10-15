@@ -35,4 +35,6 @@ The CV is an existing public asset. Review its contents separately before replac
 
 ## Layout revision
 
-Retain the original profile sidebar and right content column. The introduction is two sentences; Teaching, research chips, publication year badges and keyword lines are removed. Publication titles lead spacious rows. Reference pages informed hierarchy only; source and artwork were not copied: https://becow5x5.github.io/ and https://segyulee.github.io/.
+A centered, laptop-first layout uses a compact horizontal profile, followed immediately by publications. Names, author credits and public facts are retained. Teaching remains removed. Publication titles lead plain rows; venue and resource links share a compact line.
+
+Reference pages informed visual hierarchy only; their code and artwork were not copied: https://minseo-kimm.github.io/, https://becow5x5.github.io/ and https://segyulee.github.io/.

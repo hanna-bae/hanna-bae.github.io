@@ -65,7 +65,7 @@ class HomepageTests(unittest.TestCase):
         self.assertIn('* Equal contribution', paper)
 
     def test_requested_layout(self):
-        self.assertIn('<aside class="profile">', self.html)
+        self.assertIn('<header class="profile" id="about"', self.html)
         self.assertNotIn('id="teaching"', self.html)
         self.assertNotIn('href="#teaching"', self.html)
         self.assertNotIn('class="tags"', self.html)
