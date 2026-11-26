@@ -31,3 +31,15 @@ if (sections.length) {
   window.addEventListener('hashchange', scheduleUpdate);
   updateActiveSection();
 }
+
+// Keep a deep link on the same section when switching languages.
+const alternateLanguage = document.querySelector('.language-switch a');
+if (alternateLanguage) {
+  const alternatePage = new URL(alternateLanguage.href);
+  const syncLanguageLink = () => {
+    alternatePage.hash = location.hash;
+    alternateLanguage.href = alternatePage.href;
+  };
+  syncLanguageLink();
+  window.addEventListener('hashchange', syncLanguageLink);
+}
